@@ -16,3 +16,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+package 'grubby'
+
+template node['grubby']['sysconfig'] do
+  source 'sysconfig.erb'
+  owner 'root'
+  group 'root'
+  mode '0644'
+  variables(
+    config: node['grubby']['config']
+  )
+end
