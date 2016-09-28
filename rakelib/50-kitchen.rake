@@ -17,3 +17,5 @@ task :test_kitchen do
     threads.map(&:join)
   end
 end
+
+task default: [:test_kitchen] if ENV['encrypted_d291dff1c11f_iv']
