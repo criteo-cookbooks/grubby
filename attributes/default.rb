@@ -1,5 +1,5 @@
 #
-# Cookbook Name::	grubby
+# Cookbook Name::  grubby
 # Author::        Jeremy MAURO (j.mauro@criteo.com)
 #
 #
